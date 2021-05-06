@@ -23,9 +23,9 @@ test('The stack should be empty in the beginning', async () => {
 	expect(stack).toEqual("n/a");
 });
 
-test('', async () => {
+test('Popping stack', async () => {
 	let stack = await driver.findElement(By.id('pop')).getText();
-	expect(stack).toEqual("n/a");
+	expect(stack).toEqual("Poppa stacken!");
 });
 
 describe('Clicking "Pusha till stacken"', () => {
