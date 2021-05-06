@@ -18,7 +18,7 @@ test('peek on stack with two or more elements returns the top element', () => {
     expect(stack.peek()).toBe(42);
 });
 
-test ('', ()=>{
+test ('push in 4 elements and pop one. ', ()=>{
   stack.push(1);
   stack.push(2);
   stack.push(3);
@@ -26,8 +26,8 @@ test ('', ()=>{
   stack.pop();
 
 
-  expect(stack.peek()).toBeUndefined();
-  expect(stack.peek()).toBe(4);
+
+  expect(stack.peek()).toBe(3);
 
 
 });
