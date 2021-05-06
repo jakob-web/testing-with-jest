@@ -23,6 +23,11 @@ test('The stack should be empty in the beginning', async () => {
 	expect(stack).toEqual("n/a");
 });
 
+test('', async () => {
+	let stack = await driver.findElement(By.id('pop')).getText();
+	expect(stack).toEqual("n/a");
+});
+
 describe('Clicking "Pusha till stacken"', () => {
 	it('should open a prompt box', async () => {
 		let push = await driver.findElement(By.id('push'));
